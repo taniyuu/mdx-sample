@@ -13,7 +13,6 @@
     "react-syntax-highlighter": "^9.0.1"
   },
   "dependencies": {
-    "@glorious/demo": "^0.8.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "styled-components": "^4.1.3"
