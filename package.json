@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build --no-html deck.mdx & cpx \"images/*\" ./dist/images",
+    "build": "mdx-deck build -d ./doc --no-html deck.mdx & cpx \"images/*\" ./doc/images",
     "pdf": "mdx-deck pdf --width 1377 --height 756 deck.mdx",
     "screenshot": "mdx-deck screenshot --width 1580 --height 830 deck.mdx",
     "deploy": "gh-pages -d dist"
