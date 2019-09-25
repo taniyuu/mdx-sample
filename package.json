@@ -13,6 +13,7 @@
     "react-syntax-highlighter": "^9.0.1"
   },
   "dependencies": {
+    "@mdx-deck/themes": "^3.0.8",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "styled-components": "^4.1.3"

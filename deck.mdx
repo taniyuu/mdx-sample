@@ -1,4 +1,10 @@
+import { Invert, Split, FullScreenCode } from 'mdx-deck/layouts'
+import { themes } from 'mdx-deck'
+export const theme = themes.default
+//export { default as theme } from './components/theme'
 import { CodeSurfer } from 'mdx-deck-code-surfer'
+import nightOwl from 'prism-react-renderer/themes/nightOwl'
+
 
 # a sample of mdx-deck-code-surfer
 
@@ -8,12 +14,14 @@ import { CodeSurfer } from 'mdx-deck-code-surfer'
 - tanikko
   - Named after the best-selling cookies in Japan
   https://www.ginbis.co.jp/product/tabekko.html
+
 ---
 
 <CodeSurfer
   title="Jenkins棚卸ジョブの概要"
   code={require("!raw-loader!./snippets/sample.py")}
   lang="python"
+  theme={nightOwl}
   showNumbers={true}
   dark={false}
   steps={[
@@ -40,5 +48,27 @@ import Box from 'superbox'
   color='white' bg='pink'>
   superbox
 </Box>
+---
+<CodeSurfer
+  title="reactのテスト"
+  code={require("!raw-loader!./snippets/react.js")}
+  lang="javascript"
+  theme={nightOwl}
+  showNumbers={true}
+  dark={false}
+  steps={[
+    { notes: "これが全量"},
+    /*{ range: [1,22], notes: "外部モジュールと固定値を設定" },
+    { range: [111,122], notes: "コマンドライン引数の精査とメイン関数への橋渡し" },
+    { range: [88,108], notes: "メイン関数" },
+    { lines: [104], notes: "棚卸対象を取得する関数へ" },
+    { range: [28, 60], notes: "棚卸対象の取得関数" },
+    { range: [29, 34], notes: "JenkinsのAPI/JSONで全ジョブの情報を取得" },
+    { range: [42, 45], notes: "戻りのJSONをパースして、ビルドがないものと" },
+    { range: [46, 51], notes: "指定した月以上ビルドがないものを取得する" },*/
+  ]}
+/>
+
+
 ---
 # Fin.
