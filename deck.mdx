@@ -1,74 +1,85 @@
 import { Invert, Split, FullScreenCode } from 'mdx-deck/layouts'
 import { themes } from 'mdx-deck'
+import { Appear, Head, Notes, Image } from 'mdx-deck'
 export const theme = themes.default
 //export { default as theme } from './components/theme'
 import { CodeSurfer } from 'mdx-deck-code-surfer'
 import nightOwl from 'prism-react-renderer/themes/nightOwl'
 
+スクラム開発について思うところ 2019/9版
+----
+taniyuu
 
-# a sample of mdx-deck-code-surfer
+---
+## このスライドは
+- [これを参考にしてます](https://takumon.github.io/mdx-deck-sample/#0)
+
+---
+## そういえば
+- [しょうもないQiitaを過去に書いていた。](https://qiita.com/taniyuu/items/c6ffaa8131255dda1f1f)
+---
+## ところでみなさん
+スクラムしてますか？
+---
+## 脳内予測その１
+<img src="https://stackify.com/wp-content/uploads/2013/04/scrum-development-process.png" style={{maxHeight:'50vh', maxWidth: '50vw',  objectFit: 'contain'}}/>
+---
+## 脳内予測その2
+---
+<img src="https://live.staticflickr.com/4235/35358044162_a79bc25c49_b.jpg" style={{objectFit: 'contain'}}/>
+---
+
+## ~~スクラム開発について思うところ 2019/9版~~
+スクラム開発と「スクラム」
+----
+taniyuu
 
 ---
 
-# About Me
-- tanikko
-  - Named after the best-selling cookies in Japan
-  https://www.ginbis.co.jp/product/tabekko.html
+## Q:スクラム開発における登場人物をあげよ
+
+---
+<Image src="./images/Logo-white-background.png"style={{objectFit: 'contain'}}>
+
+## 「スクラム」を構成するメンバ
+
+<img src="https://stackify.com/wp-content/uploads/2013/04/rugby-scrum-formation.png" style={{maxHeight:'50vh', maxWidth: '50vw',  objectFit: 'contain'}}/>
+
+</Image>
+---
+## これ、Leanじゃね？
+
+---
+## Q:スクラム開発の注意すべき点は
+---
+## 「スクラム」で注意すべき点
+---
+
+<img src="https://media.giphy.com/media/wPGSLQxBUmXja/giphy.gif" style={{height:'50vh',objectFit: 'contain'}}/>
+
+---
+## 随時改訂中
+- 基本的には、脳震盪などの怪我のリスクを下げる取り組み
+  - 「スクラムルール改訂」でも、根底には不可抗力のヒットを下げる目的あり
+---
+## 規律、尊重のスポーツ
+<img src="https://media.giphy.com/media/Lp94YMNEbUgB9BAjsP/giphy.gif" style={{height:'50vh',objectFit: 'contain'}}/>
+---
+## お茶目
+<img src="https://media.giphy.com/media/PmXcvbxs5U3oeF0x6y/giphy.gif" style={{height:'50vh',objectFit: 'contain'}}/>
+---
+## あくまでも
+自分がスポーツから得られる「マイクロスキル」の一部を披露したにすぎないです。
+これからもより理解を深めて、発展することを望みます。
+
+ラグビー憲章：https://laws.worldrugby.org/?charter=all
 
 ---
 
-<CodeSurfer
-  title="Jenkins棚卸ジョブの概要"
-  code={require("!raw-loader!./snippets/sample.py")}
-  lang="python"
-  theme={nightOwl}
-  showNumbers={true}
-  dark={false}
-  steps={[
-    { notes: "これが全量"},
-    { range: [1,22], notes: "外部モジュールと固定値を設定" },
-    { range: [111,122], notes: "コマンドライン引数の精査とメイン関数への橋渡し" },
-    { range: [88,108], notes: "メイン関数" },
-    { lines: [104], notes: "棚卸対象を取得する関数へ" },
-    { range: [28, 60], notes: "棚卸対象の取得関数" },
-    { range: [29, 34], notes: "JenkinsのAPI/JSONで全ジョブの情報を取得" },
-    { range: [42, 45], notes: "戻りのJSONをパースして、ビルドがないものと" },
-    { range: [46, 51], notes: "指定した月以上ビルドがないものを取得する" },
-  ]}
-/>
-
-
----
-# Reactのテスト
-
-import Box from 'superbox'
-
-<Box
-  fontSize={80} px={3} py={4}
-  color='white' bg='pink'>
-  superbox
-</Box>
----
-<CodeSurfer
-  title="reactのテスト"
-  code={require("!raw-loader!./snippets/react.js")}
-  lang="javascript"
-  theme={nightOwl}
-  showNumbers={true}
-  dark={false}
-  steps={[
-    { notes: "これが全量"},
-    /*{ range: [1,22], notes: "外部モジュールと固定値を設定" },
-    { range: [111,122], notes: "コマンドライン引数の精査とメイン関数への橋渡し" },
-    { range: [88,108], notes: "メイン関数" },
-    { lines: [104], notes: "棚卸対象を取得する関数へ" },
-    { range: [28, 60], notes: "棚卸対象の取得関数" },
-    { range: [29, 34], notes: "JenkinsのAPI/JSONで全ジョブの情報を取得" },
-    { range: [42, 45], notes: "戻りのJSONをパースして、ビルドがないものと" },
-    { range: [46, 51], notes: "指定した月以上ビルドがないものを取得する" },*/
-  ]}
-/>
-
+## まとめ
+- もっと「スクラム」知った方がいい
+- 自分は今から見に行く
+- ワールドカップは一生に一度らしい。みんな損してるかも。
 
 ---
 # Fin.
