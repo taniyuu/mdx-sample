@@ -10,3 +10,7 @@ npm start
 ```
 npm run-script build
 ```
+
+# reference
+- https://takumon.github.io/mdx-deck-sample/#0
+- https://github.com/Takumon/mdx-deck-sample
